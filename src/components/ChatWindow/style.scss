@@ -1,0 +1,38 @@
+.message-input {
+  resize: none;
+}
+
+.message-list {
+  height: 300px;
+  overflow-y: auto;
+
+  &.empty {
+    justify-content: center;
+    align-items: center;
+    color: #ddd;
+  }
+}
+
+.message {
+  justify-content: left;
+  font-size: 14px;
+
+  .message-wrap {
+    background: aquamarine;
+  }
+
+  .message-timestamp {
+    font-size: 10px;
+    color: #626262;
+  }
+
+  &.own {
+    justify-content: flex-end;
+    text-align: right;
+
+    .message-wrap {
+      background: #bfd9ed;
+    }
+  }
+}
+

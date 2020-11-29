@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "user": {
+      "id": 1,
+      "name": "LeBron James"
+    }
+  },
+  {
+    "id": 2,
+    "user": {
+      "id": 2,
+      "name": "Chris Paul"
+    }
+  },
+  {
+    "id": 3,
+    "user": {
+      "id": 3,
+      "name": "Stephen Curry"
+    }
+  },
+  {
+    "id": 4,
+    "user": {
+      "id": 4,
+      "name": "James Harden"
+    }
+  },
+  {
+    "id": 5,
+    "user": {
+      "id": 5,
+      "name": "Jimmy Butler"
+    }
+  }
+]
