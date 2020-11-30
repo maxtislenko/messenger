@@ -25,7 +25,7 @@ const ChannelList = () => {
                 toggleLoader(false);
             }
         })()
-    },[])
+    },[setAppState])
 
     const changeChannel = (channelId) => {
         setAppState(prevState => {
