@@ -42,14 +42,22 @@ const MessageInput = () => {
     return (
         <form autoComplete="off" onSubmit={submitForm}>
             <div className="input-group">
-                <input type="text"
+                <input
+                    type="text"
                     className="form-control message-input"
                     name="message"
                     id="messageInput"
                     onInput={(event) => setMessage(event.target.value)}
+                    disabled={!activeChannel}
+                    placeholder={activeChannel ? null : 'Select user to start conversation'}
                     value={message} />
                 <div className="input-group-append">
-                    <button className="btn btn-primary px-5" onClick={submitForm}>Send</button>
+                    <button
+                        disabled={!activeChannel}
+                        className="btn btn-primary px-5"
+                        onClick={submitForm}>
+                        Send
+                    </button>
                 </div>
             </div>
         </form>
